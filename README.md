@@ -1,6 +1,6 @@
-# python-skeleton
+# BUYRANDOM
 
-Skeleton for Python projects that meet BONSAI guidelines.
+A sample repo using Skeleton for Python projects that meet BONSAI guidelines.
 
 Under development, follows the following:
 

@@ -21,7 +21,7 @@ install:
   # Replace dep1 dep2 ... with your dependencies
   - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION docopt appdirs
   - source activate test-environment
-  - conda install anaconda-client
+  - conda install anaconda-client && conda install conda-build 
   - conda config --set anaconda_upload yes
   - conda build --token $ANACONDA_TOKEN conda.recipe
 script:

@@ -27,7 +27,7 @@ def package_files(directory):
 
 setup(
     name='buyrandom',
-    version="0.1",
+    version="0.1.1",
     packages=packages,
     author="Tomás Navarrete Gutiérrez",
     author_email="tngTUDOR@users.noreply.github.com",
@@ -36,13 +36,15 @@ setup(
     # package_data={'your_name_here': package_files(os.path.join('buyrandom', 'data'))},
     entry_points = {
         'console_scripts': [
-            'buyrandom-cli = buyrandom.bin.rename_me_cli:main',
+            'buyrandom-cli = buyrandom.bin.buyrandom_cli:main',
         ]
     },
     install_requires=[
         'appdirs',
         'docopt',
     ],
+    setup_requires=["pytest-runner"],
+    tests_require=["pytest"],
     url="https://github.com/tngTUDOR/buyrandom",
     long_description=open('README.md').read(),
     description='Product production BUT RANDOM',

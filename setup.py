@@ -1,7 +1,7 @@
 from setuptools import setup
 import os
 
-packages = []
+packages = ["buyrandom", "buyrandom.bin"]
 root_dir = os.path.dirname(__file__)
 if root_dir:
     os.chdir(root_dir)
@@ -27,7 +27,7 @@ def package_files(directory):
 
 setup(
     name='buyrandom',
-    version="0.1.1",
+    version="0.1.2",
     packages=packages,
     author="Tomás Navarrete Gutiérrez",
     author_email="tngTUDOR@users.noreply.github.com",
@@ -41,7 +41,7 @@ setup(
     },
     install_requires=[
         'appdirs',
-        'docopt',
+        'docopt'
     ],
     setup_requires=["pytest-runner"],
     tests_require=["pytest"],

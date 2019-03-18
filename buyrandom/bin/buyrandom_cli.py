@@ -23,7 +23,7 @@ import os
 
 def main():
     try:
-        args = docopt(__doc__, version='0.1.1')
+        args = docopt(__doc__, version='0.1.2')
         if len(args) == 0:
             random_data = os.urandom(8)
             seed = int.from_bytes(random_data, byteorder="big")
